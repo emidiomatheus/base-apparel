@@ -1,0 +1,298 @@
+:root {
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+header img {
+    width: 100px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 4.4rem
+}
+
+#image {
+    width: 100%
+}
+
+#image img {
+    width: 100%;
+}
+
+#title-form {
+    padding: 2rem
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+    color: var(--dark-grayish-red);
+    font-size: 2.2rem;
+
+    margin: 1rem 0 .8rem 0;
+}
+
+h1 span {
+    font-weight: 300;
+    color: var(--desaturated-red)
+}
+
+p {
+    font-size: 14px;
+    color: var(--desaturated-red);
+    text-align: center;
+    line-height: 1.5;
+
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1rem;
+
+    position: relative;
+}
+
+form button {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none;
+    border-radius: 2rem;
+
+    width: 4rem;
+    height: 100%;
+
+    position: absolute;
+    right: 0;
+    
+    cursor: pointer;
+    outline: 0
+}
+
+input#email {
+    border: 1px solid var(--desaturated-red);
+    border-radius: 3rem;
+    opacity: 0.5;
+    outline: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    
+    padding: .9rem;
+    width: 100%;
+    height: 2.8rem;
+
+    background: transparent;
+
+    position: relative
+}
+
+input#email.error {
+    border: 2px solid var(--soft-red);
+    opacity: 1;
+
+    background-image: url(./images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position: right 4rem center;
+}
+
+::-webkit-input-placeholder {
+    color: var(--desaturated-red);
+    font-weight: 600;
+}
+
+::-moz-placeholder {
+    color: var(--desaturated-red);
+    font-weight: 600;
+}
+
+:-moz-placeholder {
+    color: var(--desaturated-red);
+    font-weight: 600;
+}
+
+:-ms-input-placeholder {
+    color: var(--desaturated-red);
+    font-weight: 600;
+}
+
+.error-message {
+    display: block;
+}
+
+small {
+    display: none;
+
+    width: 100%;
+    font-size: 12px;
+    color: var(--soft-red);
+
+    margin-top: 12px;
+    margin-left: 1rem;
+}
+
+small.error {
+    display: block;
+}
+
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: row-reverse;
+
+        overflow: hidden
+    }
+
+    #container {
+        display: flex;
+        flex-direction: row-reverse;
+
+        margin-top: 0
+    }
+
+    #image {
+        width: 40%;
+        height: 100%
+    }
+
+    #image img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #title-form {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* justify-content: center; */
+
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+
+        padding: 5.5rem;
+    }
+
+    header {
+        position: initial;
+        background: transparent;
+        padding: 0;
+    }
+
+    header img {
+        width: 120px;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 3rem;
+
+        margin-top: 5rem
+    }
+
+    p {
+        text-align: left;
+        font-size: 1rem;
+
+        margin: 1rem 0
+    }
+
+    .form {
+        width: 100%;
+        display: flex;
+    }
+
+    #form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input#email.error {
+        background-position: right 6rem center;
+    }
+
+    form button {
+        width: 5rem;
+        box-shadow: 0 1rem 2rem 2px hsla(0, 36%, 70%, 0.6);
+
+        transition: .2s;
+    }
+
+    form button:hover {
+        opacity: 0.7;
+    }
+}
+
+@media (min-width: 1360px) {
+    #title-form {
+        padding: 4rem 12rem;
+
+        background-size: cover;
+        background-position: center;
+    }
+
+    h1 {
+        margin-top: 8rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    #image {
+        width: 45%;
+    }
+
+    header img {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    input#email {
+        font-size: 1rem;
+
+        padding: 1.6rem
+    }
+
+    form button {
+        width: 6.5rem
+    }
+}
