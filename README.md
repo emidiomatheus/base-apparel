@@ -12,9 +12,9 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
 - [Author](#author)
+
+## Overview
 
 ### The challenge
 
@@ -28,5 +28,22 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
+### Links
+
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-page-with-email-form-using-html-css-and-js-9VKNMY1MU](https://www.frontendmentor.io/solutions/responsive-page-with-email-form-using-html-css-and-js-9VKNMY1MU)
+- Live Site URL: [https://base-apparel-eight-iota.vercel.app/](https://base-apparel-eight-iota.vercel.app/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+
+## Author
+
+- Frontend Mentor - [@emidiomatheus](https://www.frontendmentor.io/profile/emidiomatheus)
