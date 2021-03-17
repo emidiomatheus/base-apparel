@@ -9,12 +9,12 @@ const validateEmail = (email) => {
 }
 
 function errorMessage(e) {
+    e.preventDefault()
     const email = form.email.value
     
     if(!validateEmail(email) || email == ""){
         input.classList.add('error') 
         small.classList.add('error')
-        e.preventDefault()
     }
 
     setTimeout(() => {
