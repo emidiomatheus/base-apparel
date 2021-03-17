@@ -2,32 +2,6 @@ const form = document.getElementById("form")
 const small = document.querySelector("small")
 const input = document.getElementById("email")
 
-// const validateEmail = (email) => {
-//     const emailRegex = /^(([^<>()\[\]\\.,:\s@"]+(\.[^<>()\[\]\\.,:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-
-//     return emailRegex.test(email)
-// }
-
-// form.addEventListener('submit', (e) =>{
-//     e.preventDefault()
-//     const email = form.email.value
-
-//     if(!validateEmail(email) || email == ""){
-//         errorMessage.classList.add('error')
-//         input.classList.add('error')
-
-//         // form.appendChild(errorMessage)
-
-        // setTimeout(() => {
-        //     input.classList.remove('error')
-        //     errorMessage.remove('error')
-        // }, 3000)
-//     }
-// })
-
-
-
-
 const validateEmail = (email) => {
     const emailRegex = /^(([^<>()\[\]\\.,:\s@"]+(\.[^<>()\[\]\\.,:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
